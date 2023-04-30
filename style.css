@@ -1,0 +1,66 @@
+body
+{
+    background-color: #000000;
+}
+h1
+{
+    color:gold;
+    font-family:'Oswald',sans-serif;
+    text-align:center;
+    font-size:45px;
+}
+img
+{
+    width:800px;
+    height:450px;
+    border-radius:30px;
+    border:7px solid silver;
+    box-shadow:0px 0px 45px silver;
+}
+img:hover
+{
+    transform: translate3d(10px,0px,20px);  
+}
+
+.confetti-container
+ {
+    z-index: 10;
+  }
+  
+  .confetti
+   {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+  }
+  .confetti .square {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--bg);
+    transform: rotate(140deg);
+  }
+  .confetti i {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.2rem;
+    animation-name: confetti;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: calc(60s / var(--speed));
+  }
+  
+  .confetti i:nth-child(even) {
+    transform: rotate(90deg);
+  }
+  
+  @keyframes confetti {
+    0% {
+      transform: translateY(-100vh);
+    }
+  
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
